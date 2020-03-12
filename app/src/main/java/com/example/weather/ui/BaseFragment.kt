@@ -32,12 +32,11 @@ abstract class BaseFragment(val layout: Int) : Fragment() {
         }
     }
 
-    fun changeErrorFragment(fragment: Fragment) {
-        val manager = activity?.supportFragmentManager
-        val fragmentTransaction = manager?.beginTransaction()!!
-        fragmentTransaction.apply {
-            replace(R.id.fragmentContainer, fragment)
-            commit()
-        }
+    fun changeErrorFragment() {
+       if (activity?.supportFragmentManager!!.backStackEntryCount > 0) {
+           activity?.supportFragmentManager!!.popBackStack()
+       } else {
+           activity?.finish()
+       }
     }
 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/ParentLayoutStyle"
-    android:background="@color/fragmentBackground">
+    android:background="@color/fragmentBackground"
+    android:tag="@string/button_search_by_coordinates">
 
     <TextView
         style="@style/TextViewStyle"

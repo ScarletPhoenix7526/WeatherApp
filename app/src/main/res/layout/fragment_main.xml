@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/ParentLayoutStyle"
     tools:context=".ui.AppActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    android:tag="@string/tag_main">
 
     <Button
         android:id="@+id/name"

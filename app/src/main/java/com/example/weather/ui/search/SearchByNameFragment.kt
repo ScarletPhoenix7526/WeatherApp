@@ -14,7 +14,6 @@ class SearchByNameFragment : BaseFragment(R.layout.fragment_search_by_name){
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
         clickGetWeather()
     }
 

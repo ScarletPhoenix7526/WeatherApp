@@ -53,7 +53,7 @@ class InfoByNameFragment : BaseFragment(R.layout.fragment_weather_by_name) {
 
             override fun onNext(t: Throwable) {
                 loadingDialog.dismiss()
-                changeErrorFragment(SearchByNameFragment())
+                changeErrorFragment()
             }
         }
     }
