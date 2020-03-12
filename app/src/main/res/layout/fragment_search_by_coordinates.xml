@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ParentLayoutStyle"
+    android:background="@color/fragmentBackground">
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:layout_above="@id/latitude"
+        android:layout_alignStart="@id/latitude"
+        android:layout_alignLeft="@id/latitude"
+        android:text="@string/latitude" />
+
+    <EditText
+        android:id="@+id/latitude"
+        style="@style/EditTextStyle"
+        android:layout_above="@id/centerInParent"
+        android:layout_centerInParent="true"
+        android:inputType="numberDecimal" />
+
+    <View
+        android:id="@+id/centerInParent"
+        style="@style/ViewCenterInParentStyle" />
+
+    <TextView
+        android:id="@+id/nameLongitude"
+        style="@style/TextViewStyle"
+        android:layout_below="@id/centerInParent"
+        android:layout_alignStart="@id/longitude"
+        android:layout_alignLeft="@id/longitude"
+        android:text="@string/longitude" />
+
+    <EditText
+        android:id="@+id/longitude"
+        style="@style/EditTextStyle"
+        android:layout_below="@id/nameLongitude"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/show_weather"
+        style="@style/ButtonStyle"
+        android:layout_height="@dimen/button_show_height"
+        android:layout_below="@id/longitude"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/button_margin_from_edit_text"
+        android:text="@string/button_show"/>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ParentLayoutStyle"
+    tools:context=".ui.AppActivity"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/name"
+        style="@style/ButtonStyle"
+        android:layout_above="@id/centerInParent"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_search_by_location" />
+
+    <View
+        android:id="@+id/centerInParent"
+        style="@style/ViewCenterInParentStyle" />
+
+    <Button
+        android:id="@+id/coordinates"
+        style="@style/ButtonStyle"
+        android:layout_below="@id/centerInParent"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_search_by_coordinates" />
+
+</RelativeLayout>

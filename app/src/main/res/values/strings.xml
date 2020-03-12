@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <string name="button_search_by_location">Search by location</string>
+    <string name="button_search_by_coordinates">Search by coordinates</string>
+    <string name="button_show">Show</string>
+
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="location">Location:</string>
+</resources>

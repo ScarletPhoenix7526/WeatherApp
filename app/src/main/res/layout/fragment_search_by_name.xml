@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ParentLayoutStyle"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="@string/location"
+        android:layout_above="@id/location"
+        android:layout_alignStart="@id/location"
+        android:layout_alignLeft="@id/location"/>
+
+    <EditText
+        android:id="@+id/location"
+        style="@style/EditTextStyle"
+        android:layout_width="200dp"
+        android:layout_above="@id/centerInParent"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/centerInParent"
+        style="@style/ViewCenterInParentStyle"/>
+
+    <Button
+        android:id="@+id/show_weather"
+        style="@style/ButtonStyle"
+        android:layout_height="@dimen/button_show_height"
+        android:layout_below="@id/centerInParent"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_show"/>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_from_boards">16dp</dimen>
+    <dimen name="view_interspace">10dp</dimen>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="title_size">24sp</dimen>
+    <dimen name="center_in_parent_params">0dp</dimen>
+
+    <dimen name="edit_text_width">100dp</dimen>
+    <dimen name="icon_size">100dp</dimen>
+    <dimen name="edit_text_margin_under_name">5dp</dimen>
+    <dimen name="button_margin_from_edit_text">20dp</dimen>
+    <dimen name="button_show_height">30dp</dimen>
+    <dimen name="corners_radius">5dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+</resources>
