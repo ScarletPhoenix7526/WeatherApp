@@ -6,9 +6,6 @@ import com.example.weather.R
 import com.example.weather.data.WeatherModel
 import com.example.weather.repository.RxBus
 import com.example.weather.ui.BaseFragment
-import com.example.weather.ui.search.SearchByNameFragment
-import com.example.weather.utils.BACK_STACK_ERROR
-import com.example.weather.utils.ICON_URI
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.fragment_weather_by_name.*
@@ -39,7 +36,7 @@ class InfoByNameFragment : BaseFragment(R.layout.fragment_weather_by_name) {
 
             override fun onNext(model: WeatherModel) {
                 title.text = model.name
-                setWeatherIcon(model.weather[0].icon) //TODO: Synchronize it!
+                repository.setWeatherIcon(model.weather[0].icon, weather_state_icon) //TODO: Synchronize it!
                 loadingDialog.dismiss()
             }
         }
@@ -60,10 +57,5 @@ class InfoByNameFragment : BaseFragment(R.layout.fragment_weather_by_name) {
 
     private fun clearDisposable() {
         repository.clearDisposable()
-    }
-
-    fun setWeatherIcon(icon: String) {
-        val uri = "$ICON_URI$icon.png"
-        weather_state_icon.setImageURI(uri)
     }
 }

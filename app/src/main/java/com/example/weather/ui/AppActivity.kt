@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction
 import com.example.weather.R
 import com.example.weather.ui.main.MainFragment
 import com.example.weather.utils.BACK_STACK_MAIN
+import com.example.weather.utils.FileLoggingTree
 
 class AppActivity : AppCompatActivity() {
 

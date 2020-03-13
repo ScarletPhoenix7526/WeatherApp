@@ -3,15 +3,15 @@ package com.example.weather
 import android.app.Application
 import android.content.Context
 import com.example.weather.network.ApiService
-import com.facebook.drawee.backends.pipeline.Fresco
+import com.example.weather.utils.FileLoggingTree
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.CallAdapter
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import timber.log.Timber
 import java.util.concurrent.TimeUnit
+
 
 class App : Application() {
 
@@ -20,8 +20,8 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         service = initRetrofit()
-        Fresco.initialize(this)
         Timber.plant(Timber.DebugTree())
+        FileLoggingTree().saveLogCat()
     }
 
     private fun initRetrofit(): ApiService {
